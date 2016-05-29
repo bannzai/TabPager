@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C1CB3271CFB44EC000A8251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB3261CFB44EC000A8251 /* AppDelegate.swift */; };
 		9C1CB32C1CFB44EC000A8251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1CB32A1CFB44EC000A8251 /* Main.storyboard */; };
 		9C1CB32E1CFB44EC000A8251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C1CB32D1CFB44EC000A8251 /* Assets.xcassets */; };
 		9C1CB3311CFB44EC000A8251 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1CB32F1CFB44EC000A8251 /* LaunchScreen.storyboard */; };
@@ -18,6 +17,13 @@
 		9C1CB35B1CFB4587000A8251 /* LimitDemoAllCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB3561CFB4587000A8251 /* LimitDemoAllCodeViewController.swift */; };
 		9C1CB35C1CFB4587000A8251 /* LimitDemoOnContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB3571CFB4587000A8251 /* LimitDemoOnContainerViewController.swift */; };
 		9C1CB35D1CFB4587000A8251 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB3581CFB4587000A8251 /* TableViewController.swift */; };
+		9C1CB3661CFB49DA000A8251 /* PageTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB35F1CFB49DA000A8251 /* PageTabBarView.swift */; };
+		9C1CB3671CFB49DA000A8251 /* PageTabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C1CB3601CFB49DA000A8251 /* PageTabBarView.xib */; };
+		9C1CB3681CFB49DA000A8251 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB3611CFB49DA000A8251 /* PageView.swift */; };
+		9C1CB3691CFB49DA000A8251 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB3621CFB49DA000A8251 /* Style.swift */; };
+		9C1CB36A1CFB49DA000A8251 /* TabItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB3631CFB49DA000A8251 /* TabItemCollectionViewCell.swift */; };
+		9C1CB36B1CFB49DA000A8251 /* TabItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C1CB3641CFB49DA000A8251 /* TabItemCollectionViewCell.xib */; };
+		9C1CB36C1CFB49DA000A8251 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB3651CFB49DA000A8251 /* UIViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +45,6 @@
 
 /* Begin PBXFileReference section */
 		9C1CB3231CFB44EB000A8251 /* PageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C1CB3261CFB44EC000A8251 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C1CB32B1CFB44EC000A8251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C1CB32D1CFB44EC000A8251 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C1CB3301CFB44EC000A8251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +60,13 @@
 		9C1CB3561CFB4587000A8251 /* LimitDemoAllCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitDemoAllCodeViewController.swift; sourceTree = "<group>"; };
 		9C1CB3571CFB4587000A8251 /* LimitDemoOnContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitDemoOnContainerViewController.swift; sourceTree = "<group>"; };
 		9C1CB3581CFB4587000A8251 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		9C1CB35F1CFB49DA000A8251 /* PageTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTabBarView.swift; sourceTree = "<group>"; };
+		9C1CB3601CFB49DA000A8251 /* PageTabBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageTabBarView.xib; sourceTree = "<group>"; };
+		9C1CB3611CFB49DA000A8251 /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		9C1CB3621CFB49DA000A8251 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		9C1CB3631CFB49DA000A8251 /* TabItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		9C1CB3641CFB49DA000A8251 /* TabItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		9C1CB3651CFB49DA000A8251 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +97,7 @@
 		9C1CB31A1CFB44EB000A8251 = {
 			isa = PBXGroup;
 			children = (
+				9C1CB35E1CFB49DA000A8251 /* Classes */,
 				9C1CB3251CFB44EB000A8251 /* PageView */,
 				9C1CB33A1CFB44EC000A8251 /* PageViewTests */,
 				9C1CB3451CFB44EC000A8251 /* PageViewUITests */,
@@ -110,7 +123,6 @@
 				9C1CB3561CFB4587000A8251 /* LimitDemoAllCodeViewController.swift */,
 				9C1CB3571CFB4587000A8251 /* LimitDemoOnContainerViewController.swift */,
 				9C1CB3581CFB4587000A8251 /* TableViewController.swift */,
-				9C1CB3261CFB44EC000A8251 /* AppDelegate.swift */,
 				9C1CB32A1CFB44EC000A8251 /* Main.storyboard */,
 				9C1CB32D1CFB44EC000A8251 /* Assets.xcassets */,
 				9C1CB32F1CFB44EC000A8251 /* LaunchScreen.storyboard */,
@@ -135,6 +147,20 @@
 				9C1CB3481CFB44EC000A8251 /* Info.plist */,
 			);
 			path = PageViewUITests;
+			sourceTree = "<group>";
+		};
+		9C1CB35E1CFB49DA000A8251 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9C1CB35F1CFB49DA000A8251 /* PageTabBarView.swift */,
+				9C1CB3601CFB49DA000A8251 /* PageTabBarView.xib */,
+				9C1CB3611CFB49DA000A8251 /* PageView.swift */,
+				9C1CB3621CFB49DA000A8251 /* Style.swift */,
+				9C1CB3631CFB49DA000A8251 /* TabItemCollectionViewCell.swift */,
+				9C1CB3641CFB49DA000A8251 /* TabItemCollectionViewCell.xib */,
+				9C1CB3651CFB49DA000A8251 /* UIViewExtensions.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,7 +269,9 @@
 			files = (
 				9C1CB3311CFB44EC000A8251 /* LaunchScreen.storyboard in Resources */,
 				9C1CB32E1CFB44EC000A8251 /* Assets.xcassets in Resources */,
+				9C1CB36B1CFB49DA000A8251 /* TabItemCollectionViewCell.xib in Resources */,
 				9C1CB32C1CFB44EC000A8251 /* Main.storyboard in Resources */,
+				9C1CB3671CFB49DA000A8251 /* PageTabBarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,12 +296,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C1CB36C1CFB49DA000A8251 /* UIViewExtensions.swift in Sources */,
 				9C1CB35A1CFB4587000A8251 /* CollectionViewController.swift in Sources */,
+				9C1CB3681CFB49DA000A8251 /* PageView.swift in Sources */,
 				9C1CB35D1CFB4587000A8251 /* TableViewController.swift in Sources */,
 				9C1CB3591CFB4587000A8251 /* AppDelegate.swift in Sources */,
 				9C1CB35B1CFB4587000A8251 /* LimitDemoAllCodeViewController.swift in Sources */,
+				9C1CB3661CFB49DA000A8251 /* PageTabBarView.swift in Sources */,
 				9C1CB35C1CFB4587000A8251 /* LimitDemoOnContainerViewController.swift in Sources */,
-				9C1CB3271CFB44EC000A8251 /* AppDelegate.swift in Sources */,
+				9C1CB3691CFB49DA000A8251 /* Style.swift in Sources */,
+				9C1CB36A1CFB49DA000A8251 /* TabItemCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PageView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.PageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PageView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.PageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +532,7 @@
 				9C1CB34D1CFB44EC000A8251 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C1CB34E1CFB44EC000A8251 /* Build configuration list for PBXNativeTarget "PageViewTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +541,7 @@
 				9C1CB3501CFB44EC000A8251 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C1CB3511CFB44EC000A8251 /* Build configuration list for PBXNativeTarget "PageViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +550,7 @@
 				9C1CB3531CFB44EC000A8251 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

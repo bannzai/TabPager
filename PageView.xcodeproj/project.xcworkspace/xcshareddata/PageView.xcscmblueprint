@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "35FE08B69DC34D80A621656DA61C10BEF009559C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "ED36402716219574AE2695E18BE5BB2F37F0CAA7" : 0,
+    "35FE08B69DC34D80A621656DA61C10BEF009559C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A5B59272-B517-43FD-9F6F-BC69606D03D6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "ED36402716219574AE2695E18BE5BB2F37F0CAA7" : "",
+    "35FE08B69DC34D80A621656DA61C10BEF009559C" : "PageView\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PageView",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PageView.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bannzai\/PageView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "35FE08B69DC34D80A621656DA61C10BEF009559C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bannzai\/MySwiftExtension.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ED36402716219574AE2695E18BE5BB2F37F0CAA7"
+    }
+  ]
+}
