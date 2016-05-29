@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TabPager
 
 extension UIViewController {
     class var className: String {

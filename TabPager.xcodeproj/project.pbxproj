@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A9AE0EE3E3027C942506E95 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C357B5048866254C0F52C27 /* Pods.framework */; };
 		9C1CB3991CFB4FBE000A8251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB3981CFB4FBE000A8251 /* AppDelegate.swift */; };
 		9C1CB39E1CFB4FBE000A8251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1CB39C1CFB4FBE000A8251 /* Main.storyboard */; };
 		9C1CB3A01CFB4FBE000A8251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C1CB39F1CFB4FBE000A8251 /* Assets.xcassets */; };
@@ -17,13 +18,6 @@
 		9C1CB3CB1CFB4FE8000A8251 /* LimitDemoAllCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB3C71CFB4FE8000A8251 /* LimitDemoAllCodeViewController.swift */; };
 		9C1CB3CC1CFB4FE8000A8251 /* LimitDemoOnContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB3C81CFB4FE8000A8251 /* LimitDemoOnContainerViewController.swift */; };
 		9C1CB3CD1CFB4FE8000A8251 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB3C91CFB4FE8000A8251 /* TableViewController.swift */; };
-		9C1CB3D61CFB4FF2000A8251 /* PageTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB3CF1CFB4FF2000A8251 /* PageTabBarView.swift */; };
-		9C1CB3D71CFB4FF2000A8251 /* PageTabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C1CB3D01CFB4FF2000A8251 /* PageTabBarView.xib */; };
-		9C1CB3D81CFB4FF2000A8251 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB3D11CFB4FF2000A8251 /* PageView.swift */; };
-		9C1CB3D91CFB4FF2000A8251 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB3D21CFB4FF2000A8251 /* Style.swift */; };
-		9C1CB3DA1CFB4FF2000A8251 /* TabItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB3D31CFB4FF2000A8251 /* TabItemCollectionViewCell.swift */; };
-		9C1CB3DB1CFB4FF2000A8251 /* TabItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C1CB3D41CFB4FF2000A8251 /* TabItemCollectionViewCell.xib */; };
-		9C1CB3DC1CFB4FF2000A8251 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB3D51CFB4FF2000A8251 /* UIViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9C1CB3951CFB4FBE000A8251 /* TabPager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabPager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2614ABAF16CBF7E98979296A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		62A98237185E240E2D7A7623 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7C357B5048866254C0F52C27 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C1CB3951CFB4FBE000A8251 /* TabPagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabPagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1CB3981CFB4FBE000A8251 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C1CB39D1CFB4FBE000A8251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C1CB39F1CFB4FBE000A8251 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,13 +57,6 @@
 		9C1CB3C71CFB4FE8000A8251 /* LimitDemoAllCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitDemoAllCodeViewController.swift; sourceTree = "<group>"; };
 		9C1CB3C81CFB4FE8000A8251 /* LimitDemoOnContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitDemoOnContainerViewController.swift; sourceTree = "<group>"; };
 		9C1CB3C91CFB4FE8000A8251 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		9C1CB3CF1CFB4FF2000A8251 /* PageTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTabBarView.swift; sourceTree = "<group>"; };
-		9C1CB3D01CFB4FF2000A8251 /* PageTabBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageTabBarView.xib; sourceTree = "<group>"; };
-		9C1CB3D11CFB4FF2000A8251 /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
-		9C1CB3D21CFB4FF2000A8251 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
-		9C1CB3D31CFB4FF2000A8251 /* TabItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItemCollectionViewCell.swift; sourceTree = "<group>"; };
-		9C1CB3D41CFB4FF2000A8251 /* TabItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabItemCollectionViewCell.xib; sourceTree = "<group>"; };
-		9C1CB3D51CFB4FF2000A8251 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A9AE0EE3E3027C942506E95 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,21 +85,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E2DF50E8FCD44D4828D658D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C357B5048866254C0F52C27 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9C1CB38C1CFB4FBE000A8251 = {
 			isa = PBXGroup;
 			children = (
-				9C1CB3CE1CFB4FF2000A8251 /* Classes */,
 				9C1CB3971CFB4FBE000A8251 /* TabPager */,
 				9C1CB3AC1CFB4FBE000A8251 /* TabPagerTests */,
 				9C1CB3B71CFB4FBE000A8251 /* TabPagerUITests */,
 				9C1CB3961CFB4FBE000A8251 /* Products */,
+				B206BFECAC0D5B17215493DC /* Pods */,
+				8E2DF50E8FCD44D4828D658D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		9C1CB3961CFB4FBE000A8251 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C1CB3951CFB4FBE000A8251 /* TabPager.app */,
+				9C1CB3951CFB4FBE000A8251 /* TabPagerDemo.app */,
 				9C1CB3A91CFB4FBE000A8251 /* TabPagerTests.xctest */,
 				9C1CB3B41CFB4FBE000A8251 /* TabPagerUITests.xctest */,
 			);
@@ -149,18 +149,13 @@
 			path = TabPagerUITests;
 			sourceTree = "<group>";
 		};
-		9C1CB3CE1CFB4FF2000A8251 /* Classes */ = {
+		B206BFECAC0D5B17215493DC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9C1CB3CF1CFB4FF2000A8251 /* PageTabBarView.swift */,
-				9C1CB3D01CFB4FF2000A8251 /* PageTabBarView.xib */,
-				9C1CB3D11CFB4FF2000A8251 /* PageView.swift */,
-				9C1CB3D21CFB4FF2000A8251 /* Style.swift */,
-				9C1CB3D31CFB4FF2000A8251 /* TabItemCollectionViewCell.swift */,
-				9C1CB3D41CFB4FF2000A8251 /* TabItemCollectionViewCell.xib */,
-				9C1CB3D51CFB4FF2000A8251 /* UIViewExtensions.swift */,
+				2614ABAF16CBF7E98979296A /* Pods.debug.xcconfig */,
+				62A98237185E240E2D7A7623 /* Pods.release.xcconfig */,
 			);
-			path = Classes;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C1CB3BD1CFB4FBE000A8251 /* Build configuration list for PBXNativeTarget "TabPager" */;
 			buildPhases = (
+				15CABC986E45C2D42C5F5AC3 /* Check Pods Manifest.lock */,
 				9C1CB3911CFB4FBE000A8251 /* Sources */,
 				9C1CB3921CFB4FBE000A8251 /* Frameworks */,
 				9C1CB3931CFB4FBE000A8251 /* Resources */,
+				7D20F2BDB22FAFC65EEA15DC /* Embed Pods Frameworks */,
+				A2B56A43D7DC96B3A75DD6AB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,7 +178,7 @@
 			);
 			name = TabPager;
 			productName = TabPager;
-			productReference = 9C1CB3951CFB4FBE000A8251 /* TabPager.app */;
+			productReference = 9C1CB3951CFB4FBE000A8251 /* TabPagerDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9C1CB3A81CFB4FBE000A8251 /* TabPagerTests */ = {
@@ -269,9 +267,7 @@
 			files = (
 				9C1CB3A31CFB4FBE000A8251 /* LaunchScreen.storyboard in Resources */,
 				9C1CB3A01CFB4FBE000A8251 /* Assets.xcassets in Resources */,
-				9C1CB3DB1CFB4FF2000A8251 /* TabItemCollectionViewCell.xib in Resources */,
 				9C1CB39E1CFB4FBE000A8251 /* Main.storyboard in Resources */,
-				9C1CB3D71CFB4FF2000A8251 /* PageTabBarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +287,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15CABC986E45C2D42C5F5AC3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7D20F2BDB22FAFC65EEA15DC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2B56A43D7DC96B3A75DD6AB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9C1CB3911CFB4FBE000A8251 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -301,11 +345,6 @@
 				9C1CB3CC1CFB4FE8000A8251 /* LimitDemoOnContainerViewController.swift in Sources */,
 				9C1CB3CB1CFB4FE8000A8251 /* LimitDemoAllCodeViewController.swift in Sources */,
 				9C1CB3991CFB4FBE000A8251 /* AppDelegate.swift in Sources */,
-				9C1CB3DA1CFB4FF2000A8251 /* TabItemCollectionViewCell.swift in Sources */,
-				9C1CB3DC1CFB4FF2000A8251 /* UIViewExtensions.swift in Sources */,
-				9C1CB3D61CFB4FF2000A8251 /* PageTabBarView.swift in Sources */,
-				9C1CB3D81CFB4FF2000A8251 /* PageView.swift in Sources */,
-				9C1CB3D91CFB4FF2000A8251 /* Style.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,23 +484,27 @@
 		};
 		9C1CB3BE1CFB4FBE000A8251 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2614ABAF16CBF7E98979296A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TabPager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.TabPager;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)Demo";
 			};
 			name = Debug;
 		};
 		9C1CB3BF1CFB4FBE000A8251 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62A98237185E240E2D7A7623 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TabPager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.TabPager;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)Demo";
 			};
 			name = Release;
 		};
@@ -530,6 +573,7 @@
 				9C1CB3BF1CFB4FBE000A8251 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C1CB3C01CFB4FBE000A8251 /* Build configuration list for PBXNativeTarget "TabPagerTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +582,7 @@
 				9C1CB3C21CFB4FBE000A8251 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C1CB3C31CFB4FBE000A8251 /* Build configuration list for PBXNativeTarget "TabPagerUITests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +591,7 @@
 				9C1CB3C51CFB4FBE000A8251 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
