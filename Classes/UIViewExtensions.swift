@@ -17,7 +17,8 @@ extension UIView {
     }
     
     class func nib() -> UINib {
-        return UINib(nibName: className, bundle: nil)
+        let bundle = NSBundle(forClass: self)
+        return UINib(nibName: className, bundle: bundle)
     }
     
     class func viewFromNib() -> UIView {
