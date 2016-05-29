@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "35FE08B69DC34D80A621656DA61C10BEF009559C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "ED36402716219574AE2695E18BE5BB2F37F0CAA7" : 0,
+    "35FE08B69DC34D80A621656DA61C10BEF009559C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "78B54A2E-5268-4E0B-B30D-541B9C3B0FBE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "ED36402716219574AE2695E18BE5BB2F37F0CAA7" : "",
+    "35FE08B69DC34D80A621656DA61C10BEF009559C" : "TabPager\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TabPageView",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TabPageView.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bannzai\/TabPager.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "35FE08B69DC34D80A621656DA61C10BEF009559C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bannzai\/TabPager.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ED36402716219574AE2695E18BE5BB2F37F0CAA7"
+    }
+  ]
+}
