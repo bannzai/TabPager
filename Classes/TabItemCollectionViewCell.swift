@@ -9,9 +9,9 @@
 import UIKit
 
 final class TabItemCollectionViewCell: UICollectionViewCell {
-    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet fileprivate weak var titleLabel: UILabel!
     
-    private var style: TabStyle?
+    fileprivate var style: TabStyle?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,7 +20,7 @@ final class TabItemCollectionViewCell: UICollectionViewCell {
     }
     
     final func setupWith(
-        barStyle: BarStyle,
+        _ barStyle: BarStyle,
         itemStyle: TabStyle
         ) {
         
@@ -28,7 +28,7 @@ final class TabItemCollectionViewCell: UICollectionViewCell {
         configureStyle(itemStyle)
     }
     
-    final func changeSelected(selected: Bool) {
+    final func changeSelected(_ selected: Bool) {
         guard let style = style else {
             return
         }
@@ -40,11 +40,11 @@ final class TabItemCollectionViewCell: UICollectionViewCell {
         configureStyle(style)
     }
     
-    private func configureStyle(itemStyle: TabStyle) {
+    fileprivate func configureStyle(_ itemStyle: TabStyle) {
         configureTitleStyle(itemStyle)
     }
     
-    private func configureTitleStyle(itemStyle: TabStyle) {
+    fileprivate func configureTitleStyle(_ itemStyle: TabStyle) {
         titleLabel?.text = itemStyle.title
         titleLabel?.textColor = itemStyle.titleColor
         titleLabel?.font = itemStyle.font

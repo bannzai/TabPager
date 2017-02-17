@@ -1,26 +1,17 @@
 //
-//  ViewController.swift
+//  LimitDemoAllCodeViewController.swift
 //  PageView
 //
-//  Created by kingkong999yhirose on 2016/03/27.
+//  Created by kingkong999yhirose on 2016/05/30.
 //  Copyright © 2016年 kingkong999yhirose. All rights reserved.
 //
 
 import UIKit
+import TabPager
 
-extension UIViewController {
-    class var className: String {
-        return String(describing: classForCoder()).components(separatedBy: ".").last!
-    }
-    
-    static func viewController() -> UIViewController {
-        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: self.className)
-    }
-}
+class LimitDemoAllCodeViewController: UIViewController {
 
-class LimitDemoOnContainerViewController: UIViewController {
-    
-    private var pageViewController: PageViewController!
+    private var pageViewController = PageViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,36 +20,27 @@ class LimitDemoOnContainerViewController: UIViewController {
     }
     
     private func setupPageViewController() {
-        let defaultViewController = CollectionViewController.viewController()
         pageViewController.setupWith(
             pageElements: [
                 (viewController: TableViewController.viewController(),
                     tabStyle: TabStyle() {
                         $0.title = "First"
-                        $0.selectedColor = UIColor.red
-                        $0.notSelectedColor = UIColor.orange
                     }
                 ),
                 (viewController: CollectionViewController.viewController(),
                     tabStyle: TabStyle() {
                         $0.title = "Second"
-                        $0.selectedColor = UIColor.blue
-                        $0.notSelectedColor = UIColor.yellow
                     }
                 ),
-                (viewController: defaultViewController,
+                (viewController: CollectionViewController.viewController(),
                     tabStyle: TabStyle() {
                         $0.title = "Third"
-                        $0.selectedColor = UIColor.black
-                        $0.notSelectedColor = UIColor.brown
                     }
                 )
             ],
             bar: BarStyle() {
-                $0.backgroundColor = UIColor.cyan
-                $0.lineHeight = 10
-            },
-            defaultViewController: defaultViewController
+                $0.backgroundColor = UIColor.lightGrayColor()
+            }
         )
         pageViewController.changedViewController = { previousViewController, nextViewController in
             print("previousViewController: \(previousViewController)")
@@ -68,16 +50,15 @@ class LimitDemoOnContainerViewController: UIViewController {
             print("previousIndex: \(previousIndex)")
             print("nextIndex: \(nextIndex)")
         }
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "Embed" {
-            pageViewController = segue.destination as! PageViewController
-        }
+        
+        view.addSubview(pageViewController.view)
+        pageViewController.view.frame = view.frame
+        let topBarHeight = (navigationController?.navigationBar.frame.height ?? 0) + (UIApplication.sharedApplication().statusBarFrame.height ?? 0)
+        pageViewController.view.frame.origin.y = topBarHeight
+        pageViewController.view.frame.size.height -= topBarHeight
     }
     
     deinit {
         print(#file + #function + "deinit")
     }
 }
-

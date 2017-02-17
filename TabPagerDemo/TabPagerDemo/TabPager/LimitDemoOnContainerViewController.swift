@@ -7,14 +7,17 @@
 //
 
 import UIKit
+import TabPager
 
 extension UIViewController {
     class var className: String {
-        return String(describing: classForCoder()).components(separatedBy: ".").last!
+        let className = NSStringFromClass(self)
+        let range = className.rangeOfString(".")
+        return className.substringFromIndex(range!.endIndex)
     }
     
     static func viewController() -> UIViewController {
-        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: self.className)
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier(self.className)
     }
 }
 
@@ -35,27 +38,27 @@ class LimitDemoOnContainerViewController: UIViewController {
                 (viewController: TableViewController.viewController(),
                     tabStyle: TabStyle() {
                         $0.title = "First"
-                        $0.selectedColor = UIColor.red
-                        $0.notSelectedColor = UIColor.orange
+                        $0.selectedColor = UIColor.redColor()
+                        $0.notSelectedColor = UIColor.orangeColor()
                     }
                 ),
                 (viewController: CollectionViewController.viewController(),
                     tabStyle: TabStyle() {
                         $0.title = "Second"
-                        $0.selectedColor = UIColor.blue
-                        $0.notSelectedColor = UIColor.yellow
+                        $0.selectedColor = UIColor.blueColor()
+                        $0.notSelectedColor = UIColor.yellowColor()
                     }
                 ),
                 (viewController: defaultViewController,
                     tabStyle: TabStyle() {
                         $0.title = "Third"
-                        $0.selectedColor = UIColor.black
-                        $0.notSelectedColor = UIColor.brown
+                        $0.selectedColor = UIColor.blackColor()
+                        $0.notSelectedColor = UIColor.brownColor()
                     }
                 )
             ],
             bar: BarStyle() {
-                $0.backgroundColor = UIColor.cyan
+                $0.backgroundColor = UIColor.cyanColor()
                 $0.lineHeight = 10
             },
             defaultViewController: defaultViewController
@@ -70,9 +73,9 @@ class LimitDemoOnContainerViewController: UIViewController {
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "Embed" {
-            pageViewController = segue.destination as! PageViewController
+            pageViewController = segue.destinationViewController as! PageViewController
         }
     }
     

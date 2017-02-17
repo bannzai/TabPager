@@ -12,16 +12,16 @@ import UIKit
 extension UIView {
     class var className: String {
         let className = NSStringFromClass(self)
-        let range = className.rangeOfString(".")
-        return className.substringFromIndex(range!.endIndex)
+        let range = className.range(of: ".")
+        return className.substring(from: range!.upperBound)
     }
     
     class func nib() -> UINib {
-        let bundle = NSBundle(forClass: self)
+        let bundle = Bundle(for: self)
         return UINib(nibName: className, bundle: bundle)
     }
     
     class func viewFromNib() -> UIView {
-        return nib().instantiateWithOwner(nil, options: nil)[0] as! UIView
+        return nib().instantiate(withOwner: nil, options: nil)[0] as! UIView
     }
 }
