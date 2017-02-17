@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-TabPagerDemo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-TabPagerDemoTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-TabPagerDemoUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TabPager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>102F1438B6805F77F23EA9926F169E9D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>654BA2A539B973018439663845D36035</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8A49BE448B3D953AC006CB3D5A70ED7B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C530D9EBE5B12EF4F6B35413C57F914B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
