@@ -15,7 +15,11 @@ open class PageViewController: UIViewController {
     fileprivate var selectionBarStyle: BarStyle = BarStyle()
     fileprivate var tabItemCollectionViewCellStylies = [TabStyle]()
     fileprivate var pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
-    fileprivate var pageTabBar: PageTabBarView?
+    fileprivate var pageTabBar: PageTabBarView? {
+        didSet {
+            print("hoge")
+        }
+    }
     fileprivate var isMoving: Bool = false
     fileprivate var currentIndex: Int {
         return pageTabBar?.selectedIndex ?? 0
@@ -77,6 +81,7 @@ open class PageViewController: UIViewController {
         addChildViewController(pageViewController)
         
         setupPageTabBarView()
+        layoutPageTabBarView()
         setupViewControllers()
     }
     
