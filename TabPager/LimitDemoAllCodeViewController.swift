@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import TabPager
 
 class LimitDemoAllCodeViewController: UIViewController {
 
@@ -39,7 +38,7 @@ class LimitDemoAllCodeViewController: UIViewController {
                 )
             ],
             bar: BarStyle() {
-                $0.backgroundColor = UIColor.lightGrayColor()
+                $0.backgroundColor = UIColor.lightGray
             }
         )
         pageViewController.changedViewController = { previousViewController, nextViewController in
@@ -53,7 +52,7 @@ class LimitDemoAllCodeViewController: UIViewController {
         
         view.addSubview(pageViewController.view)
         pageViewController.view.frame = view.frame
-        let topBarHeight = (navigationController?.navigationBar.frame.height ?? 0) + (UIApplication.sharedApplication().statusBarFrame.height ?? 0)
+        let topBarHeight = (navigationController?.navigationBar.frame.height ?? 0) + (UIApplication.shared.statusBarFrame.height )
         pageViewController.view.frame.origin.y = topBarHeight
         pageViewController.view.frame.size.height -= topBarHeight
     }

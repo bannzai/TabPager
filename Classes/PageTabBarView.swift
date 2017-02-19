@@ -9,42 +9,42 @@
 import UIKit
 
 final class PageTabBarView: UIView {
-    @IBOutlet private weak var underLine: UIView!
-    @IBOutlet private weak var collectionView: UICollectionView!
+    @IBOutlet fileprivate weak var underLine: UIView!
+    @IBOutlet fileprivate weak var collectionView: UICollectionView!
     
-    @IBOutlet private weak var underLineLeftConstraint: NSLayoutConstraint!
-    @IBOutlet private weak var underLineWidthConstraint: NSLayoutConstraint!
-    @IBOutlet private weak var underLineHeightConstraint: NSLayoutConstraint!
+    @IBOutlet fileprivate weak var underLineLeftConstraint: NSLayoutConstraint!
+    @IBOutlet fileprivate weak var underLineWidthConstraint: NSLayoutConstraint!
+    @IBOutlet fileprivate weak var underLineHeightConstraint: NSLayoutConstraint!
     
-    private var style: BarStyle?
-    private var itemStylies: [TabStyle] = []
+    fileprivate var style: BarStyle?
+    fileprivate var itemStylies: [TabStyle] = []
     
     final var selectedIndex: Int {
-        return itemStylies.enumerate().filter({ $1.selected }).first?.index ?? 0
+        return itemStylies.enumerated().filter({ $1.selected }).first?.offset ?? 0
     }
-    private var selectedIndexPath: NSIndexPath {
-        return NSIndexPath(forItem: selectedIndex, inSection: 0)
+    fileprivate var selectedIndexPath: IndexPath {
+        return IndexPath(item: selectedIndex, section: 0)
     }
-    private var selectedCell: TabItemCollectionViewCell? {
-        return cell(selectedIndexPath)
+    fileprivate var selectedCell: TabItemCollectionViewCell? {
+        return cell(for: selectedIndexPath)
     }
-    private func cell(indexPath: NSIndexPath) -> TabItemCollectionViewCell? {
-        return collectionView.cellForItemAtIndexPath(indexPath) as? TabItemCollectionViewCell
+    fileprivate func cell(for indexPath: IndexPath) -> TabItemCollectionViewCell? {
+        return collectionView.cellForItem(at: indexPath) as? TabItemCollectionViewCell
     }
-    private var selectedTabStyle: TabStyle {
+    fileprivate var selectedTabStyle: TabStyle {
         return itemStylies[selectedIndex]
     }
-    private var cellSize: CGSize = CGSizeZero
-    final var didSelectItem:((previousIndex: Int, nextIndex: Int) -> Void)?
+    fileprivate var cellSize: CGSize = CGSize.zero
+    final var didSelectItem:((_ previousIndex: Int, _ nextIndex: Int) -> Void)?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
         collectionView.scrollsToTop = false
-        collectionView.registerNib(TabItemCollectionViewCell.nib(), forCellWithReuseIdentifier: TabItemCollectionViewCell.className)
+        collectionView.register(TabItemCollectionViewCell.nib(), forCellWithReuseIdentifier: TabItemCollectionViewCell.className)
     }
     
-    final func setupWith(barStyle: BarStyle, itemStylies: [TabStyle]) {
+    final func setupWith(_ barStyle: BarStyle, itemStylies: [TabStyle]) {
         if itemStylies.count == 0 {
             return
         }
@@ -52,28 +52,28 @@ final class PageTabBarView: UIView {
         style = barStyle
         self.itemStylies = itemStylies
         
-        frame.size = CGSizeMake(frame.size.width, barStyle.height)
+        frame.size = CGSize(width: frame.size.width, height: barStyle.height)
         backgroundColor = barStyle.backgroundColor
         
-        setupUnderLine(itemStylies.first!)
+        setupUnderLine(with: itemStylies.first!)
         collectionView.reloadData()
         
-        frame = CGRectMake(0, 0, style!.width, style!.height)
+        frame = CGRect(x: 0, y: 0, width: style!.width, height: style!.height)
     }
     
-    private func setupUnderLine(itemStyle: TabStyle) {
-        configureUnderLineStyle(itemStyle)
+    fileprivate func setupUnderLine(with itemStyle: TabStyle) {
+        configureUnderLineStyle(with: itemStyle)
     }
     
-    private func animateUnderLine(toIndex index: Int) {
-        animateUnderLine(itemStylies[index])
+    fileprivate func animateUnderLine(toIndex index: Int) {
+        animateUnderLine(for: itemStylies[index])
     }
     
-    final func scrollUnderLine(distance: CGFloat) {
+    final func scrollUnderLine(_ distance: CGFloat) {
         underLineLeftConstraint.constant = distance + CGFloat(selectedIndex) * cellSize.width
     }
     
-    final func pageViewScrollViewDidScroll(scrollView: UIScrollView) {
+    final func pageViewScrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView.contentOffset.x == scrollView.frame.width {
             scrollUnderLine(0)
             return
@@ -94,22 +94,22 @@ final class PageTabBarView: UIView {
         scrollUnderLine(offsetX)
     }
     
-    final func calcRateForPageScrollView(scrollView: UIScrollView) -> CGFloat {
+    final func calcRateForPageScrollView(_ scrollView: UIScrollView) -> CGFloat {
         return cellSize.width / scrollView.frame.width
     }
     
-    private func animateUnderLine(itemStyle: TabStyle) {
-        configureUnderLineStyle(itemStyle)
-        UIView.animateWithDuration(
-            0.2,
+    fileprivate func animateUnderLine(for itemStyle: TabStyle) {
+        configureUnderLineStyle(with:itemStyle)
+        UIView.animate(
+            withDuration: 0.2,
             delay: 0,
-            options: .CurveEaseInOut,
+            options: .curveEaseInOut,
             animations: layoutIfNeeded,
             completion: nil
         )
     }
     
-    private func configureUnderLineStyle(itemStyle: TabStyle) {
+    fileprivate func configureUnderLineStyle(with itemStyle: TabStyle) {
         guard let style = style else {
             fatalError()
         }
@@ -133,7 +133,7 @@ final class PageTabBarView: UIView {
         collectionView.reloadData()
     }
     
-    private func updateSelectedCell(toIndex index: Int) {
+    fileprivate func updateSelectedCell(toIndex index: Int) {
         itemStylies.forEach { $0.selected = false }
         let selectedStyle = itemStylies[index]
         selectedStyle.selected = true
@@ -144,34 +144,34 @@ final class PageTabBarView: UIView {
 }
 
 extension PageTabBarView: UICollectionViewDataSource {
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return itemStylies.count
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(TabItemCollectionViewCell.className, forIndexPath: indexPath) as! TabItemCollectionViewCell
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TabItemCollectionViewCell.className, for: indexPath) as! TabItemCollectionViewCell
         cell.setupWith(style!, itemStyle: itemStylies[indexPath.item])
         return cell
     }
 }
 
 extension PageTabBarView: UICollectionViewDelegateFlowLayout {
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         guard let style = style else {
-            return CGSizeZero
+            return CGSize.zero
         }
-        if cellSize == CGSizeZero {
-            cellSize = CGSizeMake(floor(style.width / CGFloat(itemStylies.count)), style.height - style.lineHeight)
+        if cellSize == CGSize.zero {
+            cellSize = CGSize(width: floor(style.width / CGFloat(itemStylies.count)), height: style.height - style.lineHeight)
         }
         return cellSize
     }
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let previousIndex = selectedIndex
         updateSelectedCellAndAnimateLine(toIndex: indexPath.item)
-        didSelectItem?(previousIndex: previousIndex, nextIndex: selectedIndex)
+        didSelectItem?(previousIndex, selectedIndex)
     }
 }

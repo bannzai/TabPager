@@ -1,0 +1,12 @@
+PODS:
+  - TabPager (0.1.3)
+
+DEPENDENCIES:
+  - TabPager
+
+SPEC CHECKSUMS:
+  TabPager: b1f128b4edc7ffac827da0965d49a9bdc9642514
+
+PODFILE CHECKSUM: 92b1fffb1d10a7961b11f65aded7c127b674bbc5
+
+COCOAPODS: 1.2.0.beta.1

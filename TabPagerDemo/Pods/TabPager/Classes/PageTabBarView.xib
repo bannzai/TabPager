@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PageTabBarView" customModule="PageView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="YQs-iI-vqd">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="B4w-vo-MWx">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="tWh-UP-tGR"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="W71-mP-Sfv"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XXR-Df-t4F">
+                    <rect key="frame" x="0.0" y="43" width="320" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="18B-Q3-W3D"/>
+                        <constraint firstAttribute="height" constant="1" id="Mv6-a9-6MG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="XXR-Df-t4F" secondAttribute="bottom" id="1Fi-JO-0JB"/>
+                <constraint firstItem="YQs-iI-vqd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3YL-lf-bT0"/>
+                <constraint firstAttribute="bottom" secondItem="YQs-iI-vqd" secondAttribute="bottom" constant="1" id="D5b-SJ-VLs"/>
+                <constraint firstAttribute="trailing" secondItem="YQs-iI-vqd" secondAttribute="trailing" id="H2d-GY-kOw"/>
+                <constraint firstItem="YQs-iI-vqd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Kcv-88-mbn"/>
+                <constraint firstItem="XXR-Df-t4F" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QkV-lh-l7Y"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="YQs-iI-vqd" id="ZfZ-B6-qrq"/>
+                <outlet property="underLine" destination="XXR-Df-t4F" id="fdI-KT-uNR"/>
+                <outlet property="underLineHeightConstraint" destination="Mv6-a9-6MG" id="0nB-n6-Yqe"/>
+                <outlet property="underLineLeftConstraint" destination="QkV-lh-l7Y" id="qML-9l-U0e"/>
+                <outlet property="underLineWidthConstraint" destination="18B-Q3-W3D" id="Xw9-4o-k5F"/>
+            </connections>
+            <point key="canvasLocation" x="343" y="253"/>
+        </view>
+    </objects>
+</document>

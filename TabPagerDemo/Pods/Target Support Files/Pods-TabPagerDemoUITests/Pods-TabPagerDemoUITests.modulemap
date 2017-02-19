@@ -1,0 +1,6 @@
+framework module Pods_TabPagerDemoUITests {
+  umbrella header "Pods-TabPagerDemoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

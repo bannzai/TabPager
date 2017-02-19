@@ -8,43 +8,47 @@
 
 import UIKit
 
-public class PageViewController: UIViewController {
+open class PageViewController: UIViewController {
     
-    private var defaultViewController: UIViewController?
-    private var viewControllers = [UIViewController]()
-    private var selectionBarStyle: BarStyle = BarStyle()
-    private var tabItemCollectionViewCellStylies = [TabStyle]()
-    private var pageViewController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
-    private var pageTabBar: PageTabBarView?
-    private var isMoving: Bool = false
-    private var currentIndex: Int {
+    fileprivate var defaultViewController: UIViewController?
+    fileprivate var viewControllers = [UIViewController]()
+    fileprivate var selectionBarStyle: BarStyle = BarStyle()
+    fileprivate var tabItemCollectionViewCellStylies = [TabStyle]()
+    fileprivate var pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
+    fileprivate var pageTabBar: PageTabBarView? {
+        didSet {
+            print("hoge")
+        }
+    }
+    fileprivate var isMoving: Bool = false
+    fileprivate var currentIndex: Int {
         return pageTabBar?.selectedIndex ?? 0
     }
-    private lazy var scrollView: UIScrollView! = {
+    fileprivate lazy var scrollView: UIScrollView! = {
         return self.pageViewController.view.subviews.flatMap { $0 as? UIScrollView}.first
     }()
     
-    public final var changedViewController: ((previousViewController: UIViewController, nextViewController: UIViewController) -> Void)?
-    public final var changedIndex: ((previousIndex: Int, nextIndex: Int) -> Void)?
+    public final var changedViewController: ((_ previousViewController: UIViewController, _ nextViewController: UIViewController) -> Void)?
+    public final var changedIndex: ((_ previousIndex: Int, _ nextIndex: Int) -> Void)?
     
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         
         setupScrollView()
     }
     
-    override public func viewDidLayoutSubviews() {
+    override open func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
         layoutPageTabBarView()
     }
     
-    private func setupScrollView() {
+    fileprivate func setupScrollView() {
         scrollView.scrollsToTop = false
         scrollView.delegate = self
     }
     
-    public func setupWith(
+    open func setupWith(
         viewControllers pages: [UIViewController],
                         tabStylies: [TabStyle] = [],
                         bar: BarStyle = BarStyle(),
@@ -64,7 +68,7 @@ public class PageViewController: UIViewController {
         self.defaultViewController = defaultViewController
         
         if let defaultViewController = defaultViewController,
-            defaultIndex = viewControllers.indexOf(defaultViewController) {
+            let defaultIndex = viewControllers.index(of: defaultViewController) {
             tabItemCollectionViewCellStylies[defaultIndex].selected = true
         } else {
             tabItemCollectionViewCellStylies.first?.selected = true
@@ -77,10 +81,11 @@ public class PageViewController: UIViewController {
         addChildViewController(pageViewController)
         
         setupPageTabBarView()
+        layoutPageTabBarView()
         setupViewControllers()
     }
     
-    public func setupWith(
+    open func setupWith(
         pageElements elements: [(viewController: UIViewController, tabStyle: TabStyle)],
                      bar: BarStyle = BarStyle(),
                      defaultViewController: UIViewController? = nil
@@ -92,7 +97,7 @@ public class PageViewController: UIViewController {
         setupWith(viewControllers: elements.flatMap { $0.0 }, tabStylies: elements.flatMap{ $0.1 }, bar: bar, defaultViewController: defaultViewController)
     }
     
-    private func setupPageTabBarView() {
+    fileprivate func setupPageTabBarView() {
         pageTabBar?.removeFromSuperview()
         pageTabBar = nil
         
@@ -103,24 +108,24 @@ public class PageViewController: UIViewController {
             }
             self?.moveToViewController(previousIndex, nextIndex)
             if previousIndex != nextIndex {
-                self?.changedViewController?(previousViewController: viewControllers[previousIndex], nextViewController: viewControllers[nextIndex])
-                self?.changedIndex?(previousIndex: previousIndex, nextIndex: nextIndex)
+                self?.changedViewController?(viewControllers[previousIndex], viewControllers[nextIndex])
+                self?.changedIndex?(previousIndex, nextIndex)
             }
         }
         view.addSubview(pageTabBar!)
      }
     
-    private func layoutPageTabBarView() {
+    fileprivate func layoutPageTabBarView() {
         pageTabBar?.setupWith(selectionBarStyle, itemStylies: tabItemCollectionViewCellStylies)
     }
     
-    private func moveToViewController(previousIndex: Int, _ nextIndex: Int) {
+    fileprivate func moveToViewController(_ previousIndex: Int, _ nextIndex: Int) {
         isMoving = true
         let direction: UIPageViewControllerNavigationDirection
         if previousIndex < nextIndex {
-            direction = .Forward
+            direction = .forward
         } else if previousIndex > nextIndex {
-            direction = .Reverse
+            direction = .reverse
         } else {
             return
         }
@@ -131,21 +136,21 @@ public class PageViewController: UIViewController {
                                                    completion: nil)
     }
     
-    private func setupViewControllers() {
+    fileprivate func setupViewControllers() {
         pageViewController.dataSource = self
         pageViewController.delegate = self
        
         pageViewController.setViewControllers([defaultViewController ?? viewControllers[0]],
-                                                   direction: .Forward,
+                                                   direction: .forward,
                                                    animated: false,
                                                    completion: nil)
         
-        pageViewController.didMoveToParentViewController(self)
-        pageViewController.view.frame = CGRectMake(
-            view.frame.origin.x,
-            pageTabBar?.frame.size.height ?? view.frame.origin.y,
-            CGRectGetWidth(view.frame),
-            CGRectGetHeight(view.frame) - (pageTabBar?.frame.size.height ?? 0)
+        pageViewController.didMove(toParentViewController: self)
+        pageViewController.view.frame = CGRect(
+            x: view.frame.origin.x,
+            y: pageTabBar?.frame.size.height ?? view.frame.origin.y,
+            width: view.frame.width,
+            height: view.frame.height - (pageTabBar?.frame.size.height ?? 0)
         )
     }
     deinit {
@@ -154,11 +159,11 @@ public class PageViewController: UIViewController {
 }
 
 extension PageViewController: UIScrollViewDelegate {
-    public func scrollViewDidEndScrollingAnimation(scrollView: UIScrollView) {
+    public func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
         isMoving = false
     }
     
-    public func scrollViewDidScroll(scrollView: UIScrollView) {
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if isMoving {
             return
         }
@@ -187,41 +192,38 @@ extension PageViewController: UIScrollViewDelegate {
 
 extension PageViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     // MARK: - UIPageViewController DataSource
-    public func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         guard
-            let page = viewControllers.indexOf(viewController)
-            where page > 0
+            let page = viewControllers.index(of: viewController), page > 0
             else {
             return nil
         }
         
-        return viewControllers[page.predecessor()]
+        return viewControllers[(page - 1)]
     }
     
-    public func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         guard
-            let page = viewControllers.indexOf(viewController)
-            where page < viewControllers.endIndex - 1
+            let page = viewControllers.index(of: viewController), page < viewControllers.endIndex - 1
             else {
             return nil
          }
         
-        return viewControllers[page.successor()]
+        return viewControllers[(page + 1)]
     }
     
-    public func pageViewController(pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+    public func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         guard
             let previousViewController = previousViewControllers.first,
-                nextViewController = pageViewController.viewControllers?.first,
-                previousIndex = viewControllers.indexOf(previousViewController),
-                nextIndex = viewControllers.indexOf(nextViewController)
-            where
+                let nextViewController = pageViewController.viewControllers?.first,
+                let previousIndex = viewControllers.index(of: previousViewController),
+                let nextIndex = viewControllers.index(of: nextViewController),
                 previousIndex != nextIndex
             else {
                 return
         }
         isMoving = false
-        changedViewController?(previousViewController: previousViewController, nextViewController: nextViewController)
-        changedIndex?(previousIndex: previousIndex, nextIndex: nextIndex)
+        changedViewController?(previousViewController, nextViewController)
+        changedIndex?(previousIndex, nextIndex)
     }
 }

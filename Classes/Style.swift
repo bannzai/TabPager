@@ -9,16 +9,16 @@
 
 import UIKit
 
-public class TabStyle {
-    public var title: String? = nil
-    public var selected: Bool = false
-    public var selectedColor: UIColor = UIColor.blackColor()
-    public var notSelectedColor: UIColor = UIColor.grayColor()
-    public var font: UIFont = UIFont.systemFontOfSize(14)
+open class TabStyle {
+    open var title: String? = nil
+    open var selected: Bool = false
+    open var selectedColor: UIColor = UIColor.black
+    open var notSelectedColor: UIColor = UIColor.gray
+    open var font: UIFont = UIFont.systemFont(ofSize: 14)
     
     public init() { }
     
-    public init(@noescape _ initializer: TabStyle -> Void) {
+    public init(_ initializer: (TabStyle) -> Void) {
         initializer(self)
     }
     
@@ -26,19 +26,19 @@ public class TabStyle {
         self.title = title
     }
     
-    public var titleColor: UIColor {
+    open var titleColor: UIColor {
         return selected ? selectedColor : notSelectedColor
     }
 }
 
-public class BarStyle {
-    public var height: CGFloat = 44
-    public var width: CGFloat = CGRectGetWidth(UIScreen.mainScreen().bounds)
-    public var backgroundColor = UIColor.whiteColor()
-    public var lineHeight: CGFloat = 1
+open class BarStyle {
+    open var height: CGFloat = 44
+    open var width: CGFloat = UIScreen.main.bounds.width
+    open var backgroundColor = UIColor.white
+    open var lineHeight: CGFloat = 1
     
     public init () { }
-    public init(@noescape _ initializer: BarStyle -> Void) {
+    public init(_ initializer: (BarStyle) -> Void) {
         initializer(self)
     }
     

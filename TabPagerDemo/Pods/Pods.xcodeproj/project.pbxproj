@@ -1,0 +1,887 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06F138307B857BD1E3174C9B33A9DBD9 /* Pods-TabPagerDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5385DAA158FA906E579D8ED519739A25 /* Pods-TabPagerDemoTests-dummy.m */; };
+		2177CBBB26A36E23A7B6E168819CE838 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FD5B06C4DCE20E9B1E32F44BC91880 /* UIViewExtensions.swift */; };
+		31DABCA46774269249452BAD5AE75E21 /* Pods-TabPagerDemoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57856AA12FA24D7FE6326ED43B64E72D /* Pods-TabPagerDemoUITests-dummy.m */; };
+		3F8E11772C26EF3B0412AD0103F3FF8D /* TabPager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EDBF1EE01CE466B42058BB5C83EF39 /* TabPager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4465D8D7FBE71139D48C476A3E059D32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		4DAC9BE2A165C9C2C178135904B91923 /* PageTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA0BAC6A5E2A47B43A8F4DD89FFB7E /* PageTabBarView.swift */; };
+		4F0A4055F5F913FB1F99C61653377FA1 /* Pods-TabPagerDemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A0920C053D4234928704DE7A3778E8 /* Pods-TabPagerDemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63A66031050D9E0BEABFBF64392BC24F /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0990DE6B582F5D058A0E63A49CEE7379 /* Style.swift */; };
+		742AA3A0AEE7AA940CD05EBA83700BD4 /* TabItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1F5C25AC604360EAF1B03C6BB9B661 /* TabItemCollectionViewCell.swift */; };
+		75D9F0046C9F6B311742D24645A60A4C /* Pods-TabPagerDemoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50AACC9CCAA6665A8FA1B1B797EC56D0 /* Pods-TabPagerDemoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84D845BED9DD82A42B96CA062BB298F2 /* TabItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E29DDB172253E781780DD34750A8EA9 /* TabItemCollectionViewCell.xib */; };
+		B04FBC3B7119359F64735E9ACE54EF46 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE827815F80B3B310057D7378BBF45B5 /* PageView.swift */; };
+		B92DF38918FB3171E45E9484D093FAA0 /* TabPager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B726498781357B64F2913389108DF3B /* TabPager-dummy.m */; };
+		C7C73D7B94702481B185B0F694A3F271 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		DD48928DED8FBD52C8C850A6FB5B4664 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		F0365D84F5BD47BDB11A8860043A7061 /* PageTabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A65FE9FA45FBADC6637A6B6B4C888F /* PageTabBarView.xib */; };
+		F45042014AB06144D12797D9AD3E9042 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		F5B7CE59C9D9CA49B02EB47E1CD81472 /* Pods-TabPagerDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 82432A3DC8933B69709CEBBE097C0CA6 /* Pods-TabPagerDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F967C4C66A826F5F00EBABB3EA7149E9 /* Pods-TabPagerDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C12F973BAB419AE6CC51C3A7EA06089 /* Pods-TabPagerDemo-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		435EF7AFEB1042D22853C7F037944BF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A49BE448B3D953AC006CB3D5A70ED7B;
+			remoteInfo = TabPager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0155A645F17063063D8FBF757F2A7922 /* Pods-TabPagerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TabPagerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		08A0920C053D4234928704DE7A3778E8 /* Pods-TabPagerDemoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TabPagerDemoTests-umbrella.h"; sourceTree = "<group>"; };
+		0990DE6B582F5D058A0E63A49CEE7379 /* Style.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Style.swift; path = Classes/Style.swift; sourceTree = "<group>"; };
+		11038E8DC768890F82A88793D0C7FE5D /* Pods-TabPagerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TabPagerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1313FBF23B9F2406D39BAFBE2FA61BEF /* TabPager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TabPager.xcconfig; sourceTree = "<group>"; };
+		16A65FE9FA45FBADC6637A6B6B4C888F /* PageTabBarView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = PageTabBarView.xib; path = Classes/PageTabBarView.xib; sourceTree = "<group>"; };
+		2B726498781357B64F2913389108DF3B /* TabPager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TabPager-dummy.m"; sourceTree = "<group>"; };
+		2C12F973BAB419AE6CC51C3A7EA06089 /* Pods-TabPagerDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TabPagerDemo-dummy.m"; sourceTree = "<group>"; };
+		4702111E924720DDDEB5BA7D5B5CA14B /* Pods-TabPagerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TabPagerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		4D269CCA5C62D933EE5700A2C9FC0DF0 /* TabPager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TabPager.modulemap; sourceTree = "<group>"; };
+		4ED9AA107635DD49700458684A68F7E9 /* Pods_TabPagerDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TabPagerDemoTests.framework; path = "Pods-TabPagerDemoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50AACC9CCAA6665A8FA1B1B797EC56D0 /* Pods-TabPagerDemoUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TabPagerDemoUITests-umbrella.h"; sourceTree = "<group>"; };
+		5385DAA158FA906E579D8ED519739A25 /* Pods-TabPagerDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TabPagerDemoTests-dummy.m"; sourceTree = "<group>"; };
+		57856AA12FA24D7FE6326ED43B64E72D /* Pods-TabPagerDemoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TabPagerDemoUITests-dummy.m"; sourceTree = "<group>"; };
+		5D928B832750FE2C3CEDD3395611B1ED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63E7768B4D9B7FCB41F3022C37EA9472 /* Pods-TabPagerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TabPagerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		6CF0C3DA0B414EB4EA4D3E41B021BF4D /* Pods-TabPagerDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TabPagerDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6F6946F84F2866E64F0E277906C0BD38 /* Pods-TabPagerDemoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TabPagerDemoTests-resources.sh"; sourceTree = "<group>"; };
+		7E29DDB172253E781780DD34750A8EA9 /* TabItemCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = TabItemCollectionViewCell.xib; path = Classes/TabItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		82432A3DC8933B69709CEBBE097C0CA6 /* Pods-TabPagerDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TabPagerDemo-umbrella.h"; sourceTree = "<group>"; };
+		85E1410C27A45D27A69E2B70DEB222EC /* Pods-TabPagerDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TabPagerDemo-resources.sh"; sourceTree = "<group>"; };
+		8944E3D1BA3B8B13B896DD8DB6B8CECC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E1F5C25AC604360EAF1B03C6BB9B661 /* TabItemCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabItemCollectionViewCell.swift; path = Classes/TabItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9602F3B13DE248BB5B95E0C73843810F /* TabPager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TabPager-prefix.pch"; sourceTree = "<group>"; };
+		9E0164B6B2F3B308011E361BDD948DB6 /* Pods-TabPagerDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TabPagerDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9E24D1BB0DEB15041D5B238D6F05C3AD /* Pods-TabPagerDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TabPagerDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		9E727F70B1935DFD62E1C0A4168810BD /* Pods-TabPagerDemoUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TabPagerDemoUITests-resources.sh"; sourceTree = "<group>"; };
+		A516602FDE66E08DA3BDC45BF5DCEA23 /* Pods-TabPagerDemoUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TabPagerDemoUITests.modulemap"; sourceTree = "<group>"; };
+		A6FD5B06C4DCE20E9B1E32F44BC91880 /* UIViewExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtensions.swift; path = Classes/UIViewExtensions.swift; sourceTree = "<group>"; };
+		A9C6D9EED93A2A0BA12D9CB63CDE830E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACB626EFBCB0BB9083FDA924879336B2 /* TabPager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TabPager.framework; path = TabPager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B11BC73D93D055B0EF20A3254D3285F2 /* Pods_TabPagerDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TabPagerDemoUITests.framework; path = "Pods-TabPagerDemoUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7EDBF1EE01CE466B42058BB5C83EF39 /* TabPager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TabPager-umbrella.h"; sourceTree = "<group>"; };
+		C217737788BBD60B1D24EC206302CBD1 /* Pods-TabPagerDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TabPagerDemoTests-frameworks.sh"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CEAC49787DC040E3259283D001151BB8 /* Pods_TabPagerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TabPagerDemo.framework; path = "Pods-TabPagerDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D104DAF13FD779A05803E8C2CC8F2F27 /* Pods-TabPagerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TabPagerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D76B30C65A9C0EB3F7086D82D098AB44 /* Pods-TabPagerDemoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TabPagerDemoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D8868C96A64F4397C635FD85F4D00A0D /* Pods-TabPagerDemoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TabPagerDemoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E2B600B65E9495351D708CC5451DE6F7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E920728BB06330C49BE16CA1166C6532 /* Pods-TabPagerDemoUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TabPagerDemoUITests-frameworks.sh"; sourceTree = "<group>"; };
+		EEFD3E01869576B277F0B0F81B3736F6 /* Pods-TabPagerDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TabPagerDemo-frameworks.sh"; sourceTree = "<group>"; };
+		F1BA650C9CB2D2638EEF9929B58D0341 /* Pods-TabPagerDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TabPagerDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F26030DF3C78760E0195FED9CAA18E62 /* Pods-TabPagerDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TabPagerDemo.modulemap"; sourceTree = "<group>"; };
+		F79BA4849751C431A07A82E7A398F3A6 /* Pods-TabPagerDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TabPagerDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F7EA0BAC6A5E2A47B43A8F4DD89FFB7E /* PageTabBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageTabBarView.swift; path = Classes/PageTabBarView.swift; sourceTree = "<group>"; };
+		FE827815F80B3B310057D7378BBF45B5 /* PageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageView.swift; path = Classes/PageView.swift; sourceTree = "<group>"; };
+		FF534B11FE12D5DF37228A13EEC2D198 /* Pods-TabPagerDemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TabPagerDemoTests.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CBA526F38998E4DBCE8DA2F6AF25B7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45042014AB06144D12797D9AD3E9042 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88B1810051BD622F85E167FD1056BB71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7C73D7B94702481B185B0F694A3F271 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F31474938228649C67978CA839CE3A5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4465D8D7FBE71139D48C476A3E059D32 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F72C5CB74EF29E247A0F530152B2C66D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD48928DED8FBD52C8C850A6FB5B4664 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C3667017AC19F41CD1684F289EF1712 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEAC49787DC040E3259283D001151BB8 /* Pods_TabPagerDemo.framework */,
+				4ED9AA107635DD49700458684A68F7E9 /* Pods_TabPagerDemoTests.framework */,
+				B11BC73D93D055B0EF20A3254D3285F2 /* Pods_TabPagerDemoUITests.framework */,
+				ACB626EFBCB0BB9083FDA924879336B2 /* TabPager.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CCEE6B8B1057AD0EBED04B4B3A3B831 /* Pods-TabPagerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5D928B832750FE2C3CEDD3395611B1ED /* Info.plist */,
+				A516602FDE66E08DA3BDC45BF5DCEA23 /* Pods-TabPagerDemoUITests.modulemap */,
+				D76B30C65A9C0EB3F7086D82D098AB44 /* Pods-TabPagerDemoUITests-acknowledgements.markdown */,
+				D8868C96A64F4397C635FD85F4D00A0D /* Pods-TabPagerDemoUITests-acknowledgements.plist */,
+				57856AA12FA24D7FE6326ED43B64E72D /* Pods-TabPagerDemoUITests-dummy.m */,
+				E920728BB06330C49BE16CA1166C6532 /* Pods-TabPagerDemoUITests-frameworks.sh */,
+				9E727F70B1935DFD62E1C0A4168810BD /* Pods-TabPagerDemoUITests-resources.sh */,
+				50AACC9CCAA6665A8FA1B1B797EC56D0 /* Pods-TabPagerDemoUITests-umbrella.h */,
+				11038E8DC768890F82A88793D0C7FE5D /* Pods-TabPagerDemoUITests.debug.xcconfig */,
+				F79BA4849751C431A07A82E7A398F3A6 /* Pods-TabPagerDemoUITests.release.xcconfig */,
+			);
+			name = "Pods-TabPagerDemoUITests";
+			path = "Target Support Files/Pods-TabPagerDemoUITests";
+			sourceTree = "<group>";
+		};
+		6F409ECEB1E9F19B1963E17691F1CF67 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9C6D9EED93A2A0BA12D9CB63CDE830E /* Info.plist */,
+				4D269CCA5C62D933EE5700A2C9FC0DF0 /* TabPager.modulemap */,
+				1313FBF23B9F2406D39BAFBE2FA61BEF /* TabPager.xcconfig */,
+				2B726498781357B64F2913389108DF3B /* TabPager-dummy.m */,
+				9602F3B13DE248BB5B95E0C73843810F /* TabPager-prefix.pch */,
+				B7EDBF1EE01CE466B42058BB5C83EF39 /* TabPager-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TabPager";
+			sourceTree = "<group>";
+		};
+		740D661E9479B0FEFF8EC922872F93C4 /* TabPager */ = {
+			isa = PBXGroup;
+			children = (
+				F7EA0BAC6A5E2A47B43A8F4DD89FFB7E /* PageTabBarView.swift */,
+				FE827815F80B3B310057D7378BBF45B5 /* PageView.swift */,
+				0990DE6B582F5D058A0E63A49CEE7379 /* Style.swift */,
+				8E1F5C25AC604360EAF1B03C6BB9B661 /* TabItemCollectionViewCell.swift */,
+				A6FD5B06C4DCE20E9B1E32F44BC91880 /* UIViewExtensions.swift */,
+				90167C107026153ADC82D4A0B6441E4A /* Resources */,
+				6F409ECEB1E9F19B1963E17691F1CF67 /* Support Files */,
+			);
+			name = TabPager;
+			path = TabPager;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7BFEA867A0EB89760C14B6F24585A2CD /* Pods-TabPagerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				8944E3D1BA3B8B13B896DD8DB6B8CECC /* Info.plist */,
+				FF534B11FE12D5DF37228A13EEC2D198 /* Pods-TabPagerDemoTests.modulemap */,
+				F1BA650C9CB2D2638EEF9929B58D0341 /* Pods-TabPagerDemoTests-acknowledgements.markdown */,
+				6CF0C3DA0B414EB4EA4D3E41B021BF4D /* Pods-TabPagerDemoTests-acknowledgements.plist */,
+				5385DAA158FA906E579D8ED519739A25 /* Pods-TabPagerDemoTests-dummy.m */,
+				C217737788BBD60B1D24EC206302CBD1 /* Pods-TabPagerDemoTests-frameworks.sh */,
+				6F6946F84F2866E64F0E277906C0BD38 /* Pods-TabPagerDemoTests-resources.sh */,
+				08A0920C053D4234928704DE7A3778E8 /* Pods-TabPagerDemoTests-umbrella.h */,
+				D104DAF13FD779A05803E8C2CC8F2F27 /* Pods-TabPagerDemoTests.debug.xcconfig */,
+				0155A645F17063063D8FBF757F2A7922 /* Pods-TabPagerDemoTests.release.xcconfig */,
+			);
+			name = "Pods-TabPagerDemoTests";
+			path = "Target Support Files/Pods-TabPagerDemoTests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				CB89463B1A5686D893AAC79E37DE061E /* Pods */,
+				1C3667017AC19F41CD1684F289EF1712 /* Products */,
+				C376BD14F51F5FFF8FD8729FB2F12DFD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		90167C107026153ADC82D4A0B6441E4A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				16A65FE9FA45FBADC6637A6B6B4C888F /* PageTabBarView.xib */,
+				7E29DDB172253E781780DD34750A8EA9 /* TabItemCollectionViewCell.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C376BD14F51F5FFF8FD8729FB2F12DFD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0FDCEA6F448F5D56D3983E6E60256FE /* Pods-TabPagerDemo */,
+				7BFEA867A0EB89760C14B6F24585A2CD /* Pods-TabPagerDemoTests */,
+				5CCEE6B8B1057AD0EBED04B4B3A3B831 /* Pods-TabPagerDemoUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CB89463B1A5686D893AAC79E37DE061E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				740D661E9479B0FEFF8EC922872F93C4 /* TabPager */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E0FDCEA6F448F5D56D3983E6E60256FE /* Pods-TabPagerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E2B600B65E9495351D708CC5451DE6F7 /* Info.plist */,
+				F26030DF3C78760E0195FED9CAA18E62 /* Pods-TabPagerDemo.modulemap */,
+				9E0164B6B2F3B308011E361BDD948DB6 /* Pods-TabPagerDemo-acknowledgements.markdown */,
+				9E24D1BB0DEB15041D5B238D6F05C3AD /* Pods-TabPagerDemo-acknowledgements.plist */,
+				2C12F973BAB419AE6CC51C3A7EA06089 /* Pods-TabPagerDemo-dummy.m */,
+				EEFD3E01869576B277F0B0F81B3736F6 /* Pods-TabPagerDemo-frameworks.sh */,
+				85E1410C27A45D27A69E2B70DEB222EC /* Pods-TabPagerDemo-resources.sh */,
+				82432A3DC8933B69709CEBBE097C0CA6 /* Pods-TabPagerDemo-umbrella.h */,
+				63E7768B4D9B7FCB41F3022C37EA9472 /* Pods-TabPagerDemo.debug.xcconfig */,
+				4702111E924720DDDEB5BA7D5B5CA14B /* Pods-TabPagerDemo.release.xcconfig */,
+			);
+			name = "Pods-TabPagerDemo";
+			path = "Target Support Files/Pods-TabPagerDemo";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		07556CE3A0C436B69AE74C5AACA90A79 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F8E11772C26EF3B0412AD0103F3FF8D /* TabPager-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C79D18302F15E39E88D1489CFA55A4C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F0A4055F5F913FB1F99C61653377FA1 /* Pods-TabPagerDemoTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C40EEC992A663E0F6AC1F0CD99A000 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75D9F0046C9F6B311742D24645A60A4C /* Pods-TabPagerDemoUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D423372800DE4A3ABC3849DEA05855D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B7CE59C9D9CA49B02EB47E1CD81472 /* Pods-TabPagerDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		102F1438B6805F77F23EA9926F169E9D /* Pods-TabPagerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 357859E5AFFF158D2C064DBBFE7C4A55 /* Build configuration list for PBXNativeTarget "Pods-TabPagerDemoTests" */;
+			buildPhases = (
+				37670D93E281EEAD8B9E0E15D43807C8 /* Sources */,
+				F31474938228649C67978CA839CE3A5E /* Frameworks */,
+				3C79D18302F15E39E88D1489CFA55A4C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TabPagerDemoTests";
+			productName = "Pods-TabPagerDemoTests";
+			productReference = 4ED9AA107635DD49700458684A68F7E9 /* Pods_TabPagerDemoTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		654BA2A539B973018439663845D36035 /* Pods-TabPagerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7881A8A7712BF5784B285063A249A14 /* Build configuration list for PBXNativeTarget "Pods-TabPagerDemoUITests" */;
+			buildPhases = (
+				7CF31F0C44A39E2389DE1A3EE59D18D3 /* Sources */,
+				88B1810051BD622F85E167FD1056BB71 /* Frameworks */,
+				40C40EEC992A663E0F6AC1F0CD99A000 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TabPagerDemoUITests";
+			productName = "Pods-TabPagerDemoUITests";
+			productReference = B11BC73D93D055B0EF20A3254D3285F2 /* Pods_TabPagerDemoUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8A49BE448B3D953AC006CB3D5A70ED7B /* TabPager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8CF34C0D0D2D5E08020E7DE68B8C23A /* Build configuration list for PBXNativeTarget "TabPager" */;
+			buildPhases = (
+				DB611D5BCD6CBA96BB9F3B73EEAE222F /* Sources */,
+				F72C5CB74EF29E247A0F530152B2C66D /* Frameworks */,
+				E84DDE16038C385CF10FDC518FC5AB8C /* Resources */,
+				07556CE3A0C436B69AE74C5AACA90A79 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TabPager;
+			productName = TabPager;
+			productReference = ACB626EFBCB0BB9083FDA924879336B2 /* TabPager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C530D9EBE5B12EF4F6B35413C57F914B /* Pods-TabPagerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24078CC0951075F166913AFB9751AC72 /* Build configuration list for PBXNativeTarget "Pods-TabPagerDemo" */;
+			buildPhases = (
+				6E3A4F4A8CE9D660120D469446128FFB /* Sources */,
+				6CBA526F38998E4DBCE8DA2F6AF25B7A /* Frameworks */,
+				8D423372800DE4A3ABC3849DEA05855D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FB92328B0FF33B6759D154240718A4A /* PBXTargetDependency */,
+			);
+			name = "Pods-TabPagerDemo";
+			productName = "Pods-TabPagerDemo";
+			productReference = CEAC49787DC040E3259283D001151BB8 /* Pods_TabPagerDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 1C3667017AC19F41CD1684F289EF1712 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C530D9EBE5B12EF4F6B35413C57F914B /* Pods-TabPagerDemo */,
+				102F1438B6805F77F23EA9926F169E9D /* Pods-TabPagerDemoTests */,
+				654BA2A539B973018439663845D36035 /* Pods-TabPagerDemoUITests */,
+				8A49BE448B3D953AC006CB3D5A70ED7B /* TabPager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E84DDE16038C385CF10FDC518FC5AB8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0365D84F5BD47BDB11A8860043A7061 /* PageTabBarView.xib in Resources */,
+				84D845BED9DD82A42B96CA062BB298F2 /* TabItemCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37670D93E281EEAD8B9E0E15D43807C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06F138307B857BD1E3174C9B33A9DBD9 /* Pods-TabPagerDemoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E3A4F4A8CE9D660120D469446128FFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F967C4C66A826F5F00EBABB3EA7149E9 /* Pods-TabPagerDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF31F0C44A39E2389DE1A3EE59D18D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31DABCA46774269249452BAD5AE75E21 /* Pods-TabPagerDemoUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB611D5BCD6CBA96BB9F3B73EEAE222F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DAC9BE2A165C9C2C178135904B91923 /* PageTabBarView.swift in Sources */,
+				B04FBC3B7119359F64735E9ACE54EF46 /* PageView.swift in Sources */,
+				63A66031050D9E0BEABFBF64392BC24F /* Style.swift in Sources */,
+				742AA3A0AEE7AA940CD05EBA83700BD4 /* TabItemCollectionViewCell.swift in Sources */,
+				B92DF38918FB3171E45E9484D093FAA0 /* TabPager-dummy.m in Sources */,
+				2177CBBB26A36E23A7B6E168819CE838 /* UIViewExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FB92328B0FF33B6759D154240718A4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TabPager;
+			target = 8A49BE448B3D953AC006CB3D5A70ED7B /* TabPager */;
+			targetProxy = 435EF7AFEB1042D22853C7F037944BF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4A0FB8EA2428AC613A7B443F8A1D63C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D104DAF13FD779A05803E8C2CC8F2F27 /* Pods-TabPagerDemoTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TabPagerDemoTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TabPagerDemoTests/Pods-TabPagerDemoTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TabPagerDemoTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70C9BD42F1F7DB918C40FDA60683EB9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4702111E924720DDDEB5BA7D5B5CA14B /* Pods-TabPagerDemo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TabPagerDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TabPagerDemo/Pods-TabPagerDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TabPagerDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		90C6E656E3F77953BEA0916A349EA530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1313FBF23B9F2406D39BAFBE2FA61BEF /* TabPager.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TabPager/TabPager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TabPager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TabPager/TabPager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TabPager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A40C7F9DCB8C1C195F85EF1D3D787D50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63E7768B4D9B7FCB41F3022C37EA9472 /* Pods-TabPagerDemo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TabPagerDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TabPagerDemo/Pods-TabPagerDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TabPagerDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B33FACC55E756F5DF03CA417DCCEB51F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1313FBF23B9F2406D39BAFBE2FA61BEF /* TabPager.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TabPager/TabPager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TabPager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TabPager/TabPager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TabPager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C503FB7BE0193EE1FF2739F45B5BED8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11038E8DC768890F82A88793D0C7FE5D /* Pods-TabPagerDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TabPagerDemoUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TabPagerDemoUITests/Pods-TabPagerDemoUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TabPagerDemoUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E075C1BB03E880AC5DB92F3A8A3989F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F79BA4849751C431A07A82E7A398F3A6 /* Pods-TabPagerDemoUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TabPagerDemoUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TabPagerDemoUITests/Pods-TabPagerDemoUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TabPagerDemoUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E965A61FA889B61B4C7862BA2FE621FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0155A645F17063063D8FBF757F2A7922 /* Pods-TabPagerDemoTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TabPagerDemoTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TabPagerDemoTests/Pods-TabPagerDemoTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TabPagerDemoTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24078CC0951075F166913AFB9751AC72 /* Build configuration list for PBXNativeTarget "Pods-TabPagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A40C7F9DCB8C1C195F85EF1D3D787D50 /* Debug */,
+				70C9BD42F1F7DB918C40FDA60683EB9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		357859E5AFFF158D2C064DBBFE7C4A55 /* Build configuration list for PBXNativeTarget "Pods-TabPagerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A0FB8EA2428AC613A7B443F8A1D63C0 /* Debug */,
+				E965A61FA889B61B4C7862BA2FE621FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7881A8A7712BF5784B285063A249A14 /* Build configuration list for PBXNativeTarget "Pods-TabPagerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C503FB7BE0193EE1FF2739F45B5BED8C /* Debug */,
+				E075C1BB03E880AC5DB92F3A8A3989F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8CF34C0D0D2D5E08020E7DE68B8C23A /* Build configuration list for PBXNativeTarget "TabPager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B33FACC55E756F5DF03CA417DCCEB51F /* Debug */,
+				90C6E656E3F77953BEA0916A349EA530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
